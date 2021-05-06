@@ -2,3 +2,11 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
+@font-face {
+    font-family: 'Circe';
+    src: url("../fonts/CRC25.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Lexend';
+    src: url("../fonts/Lexend-thin.ttf") format("ttf");
+  }

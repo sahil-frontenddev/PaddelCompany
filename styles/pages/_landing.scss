@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.bg-black{
+    background: #0B1010;
+}
+.nav-link{
+
+    font-family: 'Lexend';
+    color:#fff;
+    @include font-size(18);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+
+    .banner{ 
+        background: url("../images/landing/banner.jpg") no-repeat;
+        min-height: 748px;
+        background-attachment:fixed ;
+        background-size: cover;
+        &-content{
+            // @include make-container(1140px);
+        }
+    }
+    .content-box{
+        &__left,&__right{
+            width:100%;
+
+            img{width: 100%;}
+        }
+    }
+}

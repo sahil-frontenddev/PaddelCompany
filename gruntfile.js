@@ -8,7 +8,7 @@ module.exports = function (grunt) {
                 style: 'expanded'
             },
             files: {
-                'css/stellr.css': 'styles/stellr.scss'
+                'css/main.css': 'styles/main.scss'
             }
         } 
     },
