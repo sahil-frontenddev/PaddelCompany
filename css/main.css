@@ -1449,6 +1449,7 @@ a:hover {
   background: url("../images/landing/banner.jpg") no-repeat;
   min-height: 748px;
   background-attachment: fixed;
+  background-size: cover;
 }
 .main .content-box__left, .main .content-box__right {
   width: 100%;
