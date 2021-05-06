@@ -20,6 +20,7 @@
         height: 850px;
         // background-attachment:fixed ;
         background-size: cover;
+        position: relative;
         &-content{
             // @include make-container(1140px);
             color: #FFFFFF;
@@ -28,9 +29,12 @@
             font-weight: 600;
             letter-spacing: 0;
             line-height: 88px;
-
-
-            width: 50%;
+            &-container {
+                position: absolute;
+                width: 31%;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
         }
     }
     .banner-green{

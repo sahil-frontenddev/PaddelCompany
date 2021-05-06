@@ -1450,6 +1450,7 @@ a:hover {
   background: url("../images/landing/banner.jpg") no-repeat;
   height: 850px;
   background-size: cover;
+  position: relative;
 }
 .main .banner-content {
   color: #FFFFFF;
@@ -1458,7 +1459,10 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0;
   line-height: 88px;
-  width: 50%;
+  position: absolute;
+  width: 31%;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .main .banner-green {
   background: url("../images/landing/what is padel background.svg") no-repeat;
