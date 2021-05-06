@@ -1,0 +1,29 @@
+.banner-section{
+
+
+        background-color: $banner-bg;
+        display: flex;
+        border-radius:22px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        margin: 16px;
+
+        &__logo{
+            position: absolute;
+            left: 6.25rem;
+            top: 2rem;
+        }
+
+        &__text{
+            position: absolute;
+            right: 3rem;
+            top: 50%;
+            margin: 0;
+            width: 21rem;
+            transform: translate(0,-50%);
+            @include font-size($heading-3);
+            color:$white;
+
+        }
+}

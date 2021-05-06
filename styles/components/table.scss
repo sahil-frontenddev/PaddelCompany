@@ -1,0 +1,51 @@
+.cart-table{
+        width:100%;
+        border:0;
+
+        tr{
+            
+            &:hover{
+                background: $tr-hover;
+            td .delete-item-link{display: block;}
+            }
+            td{
+                text-align: center;
+                padding:8px;
+                @include font-size($paragraph-normal);
+    
+                &:first-child{ text-align: left;}
+    
+                .delete-item-link{ display: none;}
+
+                .cart-item{ color: $anchor-color; font-weight: 700;}
+                
+                .icon-multiply {
+                    margin-left: 8px;
+                    font-size: 10px;
+                }
+            }
+
+        }
+
+        &__header {
+            
+            td{
+            border-bottom:1px dashed $input-border;
+            text-align: center;
+            @include font-size($paragraph-normal);
+
+            &:first-child{ text-align: left;}
+        }
+        &:hover{ background: unset !important;}
+
+    }
+
+        &__heading{ 
+            @include font-size($heading-5);
+            @include line-height(28);
+            margin-bottom:0;
+        }
+
+
+        
+    }

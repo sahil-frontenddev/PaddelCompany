@@ -1,0 +1,94 @@
+.seperator {
+    display: block;
+    height: 1px;
+    background: $input-border;
+    margin: 6px auto;
+    width: 90%;
+
+    &.full{ width:100%;}
+    &-vertical {
+        display: inline-block;
+        width: 1px;
+        background: $input-border;
+        margin: 0 15px;
+        height: 80%;
+        vertical-align: middle;
+        &.full{ height:100%;}
+    }
+}
+.dashed-seperator {
+    display: block;
+    height: 1px;
+    // background: $input-border;
+    margin: 6px auto;
+    width: 90%;
+    border-top:1px dashed $input-border;
+    &.full{ width:100%;}
+    
+}
+
+
+.hide{ display:none;}
+.spacer{
+    width: 100%;
+    display: block;
+    height: 8px;
+}
+.bold{ font-weight: 700;}
+.open{    transform: scale(1) !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+    .d-block{ display: block !important;}
+    .d-flex{ display: flex !important;}
+    .view-all {
+        padding: 0px 12px;
+        @include font-size($paragraph-small);
+    }
+.not-for-mobile{
+
+    @include respond-below(md){
+        display: none;
+    }
+}
+
+.margin-left__auto{ margin-left:auto;}
+.flex-space-between{
+    @include flex-space-between(center);
+    margin:8px 0;
+}
+.align-unset{
+    align-items: unset !important;
+}
+.margin-l2{
+    margin-left: 2rem;
+}
+.align-flex-end{
+    align-items: flex-end !important;
+}
+.justify-end{
+    justify-content: flex-end !important;
+}
+.ml-2{ margin-left:8px;}
+.gray-text{ color:$text-gray !important;}
+.strike-through{ text-decoration: line-through !important;}
+.red-text { color:theme-color-level(danger); margin-left:8px;}
+.text-right{ text-align: right !important;}
+.light-font{ font-weight: 300 !important;}
+.top-full-margin{ margin-top:2rem;}
+.ml-auto{ margin-left:auto !important;}
+.align-right-flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.align-center{ text-align: center; padding:6px 0 !important;}
+.vertical-base {vertical-align: baseline;}
+.right-link {display: block; text-align: right;
+
+[class^='icon-'] { font-size:10px; margin-right: 8px;}
+}
+.text-align-left{ text-align: left;}
+.m-auto{ 
+    margin:auto !important;
+}
+.mr-2{ margin-right:8px !important;}

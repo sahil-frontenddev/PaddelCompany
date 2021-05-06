@@ -1,0 +1,202 @@
+.tile{
+    background-color: $white;
+    box-shadow: 0px 3.2px 7.2px rgba(0, 0, 0, 0.04), 0px 0.6px 1.8px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding:12px 12px;
+    height: 100%;
+    width:100%;
+    position: relative;
+    padding-bottom: 50px;
+    
+
+    &__row{ 
+        @include flex-space-between(center);
+        [class^='icon-']{ 
+            cursor:pointer;
+        }
+        &--success{
+            background:$green-bg;
+            color:theme-color-level(success);
+            font-weight: 700;
+            padding:12px;
+            margin-bottom: 12px;
+
+            p{
+                @include font-size($heading-6);
+                margin:0;
+            }
+        }
+    }
+    &__col-6{
+        @include make-col(6);
+        padding:0 8px;
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child{ padding-left:0;}
+        &:last-child{ padding-right:0;}
+    }
+
+    &__heading{
+        display: flex;
+        margin-top:4px;
+        height: 2.5rem;
+        @include font-size($heading-6);
+        @include line-height(22);
+    }
+
+    &__text{
+        @include font-size($paragraph-normal);
+        height: 2.8125rem;
+        overflow: hidden;
+        color:$black;
+        &.small-text{
+            @include font-size($paragraph-small);
+            margin-top: 8px;
+            height: auto;
+        }
+        &.sub-heading{
+            height: auto;
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-weight: 700;
+
+            i ,img{
+                width: 24px;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+
+    &__pricing{
+        display: flex;
+        flex-direction: column;
+
+        p{
+            margin-bottom: 0;;
+        }
+        
+    }
+
+    &__price{
+        font-weight: 700;
+        @include font-size($heading-4);
+    }
+    &__validity{
+        @include font-size($paragraph-small);
+    }
+
+
+    &--bordered{
+        border-bottom: 4px solid $tile-border;
+    }
+
+    &__logo{
+        display: flex;
+        align-items: flex-start;
+
+        &-title {
+            padding: 0;
+            margin: 0;
+            font-size: .875rem;
+            font-weight: 700;
+            height: 2.25rem;
+            margin-left: 8px;
+        }
+    }
+    &__footer{
+        position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+
+
+    &.bordered{
+        border-top: 1px solid $border-color;
+        left: 0;
+        right: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 10px;
+    
+        a{ @include font-size($paragraph-small);}
+    }
+
+    .only-link {
+        text-align: right;
+        display: block;
+    }
+    }
+
+    &--new-arrival{ 
+        background:transparent;
+        
+        box-shadow: none;
+        border-radius: 0;
+
+        
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        li{
+
+            position: relative;
+        }
+
+        p {
+            margin-left: 26px;
+            margin-top: 0 !important;
+            padding-right: 92px;
+            margin-bottom: 0;
+            color: $text-gray;
+        }
+        a {
+            position: absolute;
+            right: 0;
+            top: 12px;
+            font-size: 12px;
+        }
+    }
+    
+    &__summary{
+        border:1px solid $input-border;
+        margin-top: 52px;
+        .tile__heading{ 
+            height: auto; 
+            margin-bottom:0;
+            @include font-size($heading-5);
+        
+            &-sub{
+                @include font-size($paragraph-small);
+                margin-top:8px;
+             }
+        }
+        
+    }
+
+    &__table{ 
+        width:100%;
+
+        td{
+            @include font-size($paragraph-normal);
+        &:first-child{
+            text-align: left;
+        }
+        &:last-child{
+            text-align: right;
+        }
+        .grand-total{ font-weight:700; @include font-size($heading-2);}
+        .sub-total{@include font-size($heading-3); margin-top:1rem; display: block;}
+        .sub-total-count{@include font-size($heading-6);}
+    }
+    }
+}
+
+
+[class^='content__col-'] {
+    margin-bottom: 10px;
+}

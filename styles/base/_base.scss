@@ -1,0 +1,25 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $input-placeholder-color;
+    opacity: 1; /* Firefox */
+    @include font-size($paragraph-normal);
+}
+
+:-webkit-input-placeholder { /* Internet Explorer 10-11 */
+    color: $input-placeholder-color;
+    @include font-size($paragraph-normal);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $input-placeholder-color;
+    @include font-size($paragraph-normal);
+}
+
+.input-text__input ::-ms-input-placeholder {
+    color:$checkbox-border;
+}
+.input-text__input ::-webkit-input-placeholder {
+    color:$checkbox-border;
+}
+.input-text__input ::placeholder {
+    color:$checkbox-border;
+}

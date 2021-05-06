@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import
+'abstracts/variables';
+@import "bootstrap-scss/functions";
+@import "bootstrap-scss/variables";
+@import "bootstrap-scss/mixins";
+
+@import "bootstrap-scss/reboot","bootstrap-scss/grid";
+@import
+'abstracts/mixins';
+@import
+'themes/default';
+@import
+  'base/base',
+  'base/typography',
+  'base/helpers',
+  'base/svg-icons',
+  'base/fonts';
+
+@import
+  'layout/header',
+  'layout/footer','layout/main-layout';
+@import
+  'components/button',
+  'components/form-elements',
+  'components/list',
+  'components/breadcrumb',
+  'components/file-box',
+  'components/table',
+  'components/tabs',
+  'components/tile',
+  'components/checkbox',
+  'components/accordion',
+  'components/dropdowns',
+  'components/auto-complete',
+  'components/filter',
+  'components/banner-section';
+@import
+  'pages/home';
+

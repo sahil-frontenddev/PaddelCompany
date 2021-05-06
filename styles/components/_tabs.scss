@@ -1,0 +1,52 @@
+.tab-list{
+    display: flex;
+    margin:0 15px;
+    justify-content: space-between;
+    align-items: center;
+    @include respond-below(md){
+        display: block;
+    }
+    ul {
+        list-style: none;
+        padding:0;
+        margin:0;   
+        display: flex;
+
+        @include respond-below(md){
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__item{
+        border-bottom: 4px solid transparent;
+        padding:10px 20px;
+        a{
+            @include font-size($paragraph-normal);
+
+        }
+
+        &.active{
+            border-color:$anchor-color;
+
+            a{
+
+                color:$black;
+            }
+        }
+    }
+
+    &__refine{
+
+
+        &-item{
+            padding:10px 0;
+            a{
+                color: $black;
+                &[disabled],&.disabled{
+                    color:$disabled;
+                }
+            }
+        }
+    }
+}

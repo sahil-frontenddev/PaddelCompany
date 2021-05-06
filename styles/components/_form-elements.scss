@@ -1,0 +1,70 @@
+.form-input{
+
+    width:100%;
+    border:1px solid $input-border;
+    border-radius: 4px;
+
+    &__group{
+        width:100%;
+        position:relative;
+        display: flex;
+        align-items: center;
+        [class^='icon']{
+
+            position: absolute;
+        }
+        input{
+            padding:4px 28px;
+            
+        }
+        &-left{ padding:6px; left:0; color:$anchor-color;}
+        &-right{padding:6px; right: 0; @include font-size(12);}
+    }
+    
+    
+
+    &:focus{ border:1px solid; border-color:$anchor-color; outline:none;}
+}
+
+.input-text{ 
+    background:transparent;
+    position: relative;
+    &__input{
+        border:1px solid transparent;    
+        border-bottom:1px solid $input-border;
+        width:100%;
+        background:$background-color-cart;
+        padding: 6px 38px 1px 8px;
+        outline:none;
+        @include font-size($paragraph-normal);
+
+        color:$black;
+
+        &:focus{ 
+            border:1px solid $anchor-color;background:$white;outline:none;
+            ~ [class^='icon']{ opacity: 1;}
+
+            &:after{ color:red;}
+        }
+        
+        &:disabled,.disabled{ background: #F9F9F9;}
+
+    }
+    .icon-arrow-bottom,.icon-cross{
+        position: absolute;
+        right: 12px;
+        @include font-size(10);
+        top: 46px;
+        opacity:  0;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    label{
+        @include font-size($paragraph-small);
+        color:$black;
+    
+        .important{ color: theme-color-level(danger);}
+    }
+
+}

@@ -1,0 +1,42 @@
+.library{
+
+    @include make-container();
+    height: 100%;
+    &__nav{
+        @include make-col(2);
+        background-color:$background-color-cart;
+        height: 100%;
+        min-height:100vh;
+        @include respond-below(lg) {
+            @include make-col(12);
+        }
+    }
+    &__content{
+        @include make-col(10);
+        height: 100%;
+
+        @include respond-below(lg) {
+            @include make-col(12);
+        }
+    }
+
+    &__header{ 
+        @include make-col(12);
+        background-color:theme-color-level(primary);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $input-border;
+    }
+   
+    &__row{ 
+        @include make-row();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__wrapper{
+        height:100%;
+    }
+
+}

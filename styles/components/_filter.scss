@@ -1,0 +1,28 @@
+.filter{
+
+    min-height: 100%;
+    border-right:1px solid $border-color;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    background: $white;
+
+    &__heading{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        h3{ 
+            @include font-size($paragraph-normal);
+            margin-bottom: 0;
+        }
+        a{
+            @include font-size($paragraph-small);
+            margin-bottom: 0;
+        }
+    }
+
+    &__row{
+        margin-bottom: 8px;
+    }
+}

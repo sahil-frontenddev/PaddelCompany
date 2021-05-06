@@ -1,0 +1,70 @@
+
+
+
+$theme-colors:(
+    "primary":     #003B7C,
+    "secondary":  #F7FCFF,
+    "success":    #32ae6f,
+    "info":       #FF832B,
+    "warning":    #FFCC3D,
+    "danger":     #da1e28
+    );
+    
+    
+
+
+
+
+// font family 
+$font-family-base:'Roboto', sans-serif;
+
+// typography
+$heading-1 : 38;
+$heading-2 : 30;
+$heading-3 : 24;
+$heading-4 : 20;
+$heading-5 : 18;
+$heading-6 : 16;
+$paragraph-normal:14;
+$paragraph-small:12;
+$paragraph-very-normal:10;
+
+
+$link-text:14;
+
+// line-height 
+
+$line-height-20 :20;
+$line-height-16 :16;
+
+
+// colors 
+$input-placeholder-color:#a9b1b4;
+$black: #1A1A1A;
+$hover-color:#1b365d;
+$anchor-color:#0076CE;
+$list-hover:#e9ebeb;
+$btn-hover:#0064b7;
+$btn-focus:#004F9B;
+$color-tertary:#FF832B;
+$color-tertary-hover:#e07325;
+$border-color:#e9ebeb;
+$input-border:#d0d3d4;
+$disabled:#d0d3d4;
+$footer-background:#1b365d;
+$checkbox-border:#7c878e;
+$text-gray:#7c878e;
+$banner-bg:#06498c;
+$tile-border:#ffc400;
+$background-color-cart:#f4f5f5;
+$tr-hover:#d7f2ff;
+$green-bg:#defbe6;
+
+$btn-disabled-background:#E0E0E0;
+
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);

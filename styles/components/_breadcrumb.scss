@@ -1,0 +1,47 @@
+.breadcrumb{
+    &__container{
+       @include make-container();
+       border-bottom: 1px solid $border-color;
+       background: $white;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    &__actions{
+        a{ 
+            @include font-size($paragraph-small);
+            margin-right:18px; 
+        [class^='icon-'] { margin-right:8px;}
+        &:last-child{ 
+            margin:0;
+        }
+        }
+    }
+    &__item{ 
+        @include font-size($paragraph-small);
+        display: flex;
+        align-items: center;
+        a{ padding:8px; padding-left:0;}
+        &:after{
+            content: "\e921";
+            display: inline-block;
+            font-family:'svg-icon';
+            padding-right:10px;
+        }
+        &:last-child{ 
+
+            &:after{
+                display: none;
+            }
+          }
+    &--active a{ color:$black;}
+        }
+    
+}

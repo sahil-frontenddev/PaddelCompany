@@ -1,0 +1,20 @@
+.files-box {
+    border: 1px solid $input-border;
+    border-radius: 4px;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icon-file{ @include font-size($heading-2);}
+
+    &__heading{
+        @include font-size($heading-6);
+        margin-left:8px;
+    }
+    &__actions{
+        a{
+            @include font-size($paragraph-small);
+            margin-left:8px;
+        }
+    }
+}

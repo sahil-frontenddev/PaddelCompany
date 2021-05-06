@@ -1,0 +1,161 @@
+body{
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+}
+.main{
+
+    @include make-container();
+    padding:0 15px;
+    background: $background-color-cart;
+    padding-bottom: 270px;
+    &__marketplace{
+        @include make-row();
+        &-filter{
+            @include make-col(2);
+            @include respond-below(lg){
+                @include make-col(12);
+            }
+            
+        }    
+    &-content{
+        background: theme-color-level(secondary);
+        @include make-col(10);
+
+        @include respond-below(lg){
+            @include make-col(12);
+        }
+    }
+    }
+    &__my-cart{
+        @include make-row();
+        background: $background-color-cart;
+        align-items: baseline;
+        &-items{
+            @include make-col(8);
+            padding:15px;
+            @include respond-below(lg){
+                @include make-col(12);
+            }
+            .heading{ margin-top:8px; margin-bottom:0; @include font-size($heading-3);}
+        }    
+    &-summary{
+       
+        @include make-col(4);
+        padding:15px;
+        @include respond-below(lg){
+            @include make-col(12);
+        }
+    }
+    }
+    @include respond-below(lg){
+        padding-bottom: 814px;
+    }
+
+}
+
+.content{
+    
+    
+    &-container{
+    @include make-container();
+    padding:0 15px;    
+    }
+    &__row{
+        @include make-row();
+        margin:0 -8px 8px;
+        // margin-bottom: 8px;
+
+        }
+        &__col{
+            @include make-col(12); 
+            padding-left:8px;
+            padding-right:8px;
+            }
+    &__col-3{
+
+        @include make-col(3); 
+        padding-left:8px;
+        padding-right:8px;
+        @include respond-below(lg){
+            @include make-col(6);
+        }
+        @include respond-below(md){
+            @include make-col(12);
+        } 
+    }
+    &__col-4{
+
+        @include make-col(4); 
+        padding-left:8px;
+        padding-right:8px;
+        @include respond-below(lg){
+            @include make-col(12);
+        }
+        
+    }
+    &__col-2{
+        @include make-col(2); 
+        padding-left:8px;
+        padding-right:8px;
+        border-right:1px solid $border-color;
+        @include respond-below(lg){
+            @include make-col(3);
+             border-right:1px solid transparent;
+        }
+        @include respond-below(md){
+            @include make-col(6);
+           border-right:1px solid transparent;
+        } 
+
+        &:last-child{ border-right:1px solid transparent;}
+    }
+
+    &__heading{
+        @include font-size($heading-4);
+        @include line-height(28);
+        font-weight: 700;
+        margin-bottom: 0;
+
+    }
+    &__view-all-link{
+        @include font-size($paragraph-normal);
+        @include line-height(20);
+    }
+}
+
+.cart-items{
+    padding:1.25rem;
+}
+
+
+// html,body{
+
+//     font-size: 16px;
+//     @include respond-below(lg) {
+//         font-size: 14px;
+//     }
+//     @include respond-below(md) {
+//         font-size: 12px;
+//     }
+    
+
+// }
+.selected-value{
+
+    display: flex;
+    background: #f4f5f5;
+    font-size: 14px;
+    position: absolute;
+    align-items: center;
+    top: 35px;
+    right: 0;
+    left: 0;
+    padding: 4px 4px;
+    z-index: -1;
+    border-bottom: 1px solid #d0d3d4;
+    min-height: 30px;
+    img {
+        margin-right: 8px;
+    }
+}
