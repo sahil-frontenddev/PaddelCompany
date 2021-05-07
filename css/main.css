@@ -1615,9 +1615,8 @@ a:hover {
 }
 @media (max-width: 767px) {
   .main .banner {
-    background: url("../images/landing/banner-mobile.png") repeat-x;
     height: 580px;
-    background-size: contain;
+    background-position: 77%;
   }
 }
 .main .banner-green {
@@ -1944,7 +1943,7 @@ a:hover {
 }
 
 .btn-outline {
-  border-color: green;
+  border-color: #00C635;
   border-radius: 20px;
   background: transparent;
   font-family: "Circe";
@@ -1963,6 +1962,7 @@ a:hover {
 .main .banner-viru {
   background: url("../images/viru-keskus/viru-header.png") no-repeat;
   background-size: contain;
+  background-color: #FAFAFA;
 }
 
 .viru-actions {
@@ -1976,6 +1976,9 @@ a:hover {
   border-bottom: 2px solid green;
 }
 
+.main-content {
+  background-color: #FAFAFA;
+}
 .main-content .main-heading {
   color: #000000;
   font-family: "Lexend";
@@ -1986,6 +1989,12 @@ a:hover {
   line-height: 75px;
   line-height: 4.6875rem;
 }
+.main-content .main-heading.small {
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 45px;
+  line-height: 2.8125rem;
+}
 
 .table.table-responsive table {
   width: 100%;
@@ -1994,6 +2003,51 @@ a:hover {
 .table.table-responsive {
   background-color: #FFFFFF;
   box-shadow: 0 0 9px 5px #E7E7E7;
+}
+
+.shadow-bg {
+  background: #FAFAFA url("../images/viru-keskus/viru-info-bg1.svg") no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.button-group {
+  display: inline-flex;
+  position: relative;
+  border: 1px solid transparent;
+}
+.button-group:hover {
+  border: 1px solid #00C635;
+}
+.button-group .btn.btn-default {
+  background: #00C635;
+  border: transparent;
+  font-family: "Lexend";
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 28px;
+  line-height: 1.75rem;
+  border-radius: 0;
+  padding: 10px;
+}
+.button-group .btn.btn-default:hover, .button-group .btn.btn-default:focus {
+  background: #fff;
+  border-color: #00C635;
+  color: #00C635;
+  box-shadow: none;
+}
+
+.button-group .btn.btn-default:first-child:after {
+  content: "";
+  width: 4px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  height: 106%;
+  transform: rotate(19deg);
+  left: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */

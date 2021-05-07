@@ -60,10 +60,11 @@
             }
         }
         @include respond-below(sm){
-            background: url("../images/landing/banner-mobile.png") repeat-x;
+            // background: url("../images/landing/banner-mobile.png") repeat-x;
         height: 580px;
         // background-attachment:fixed ;
-        background-size: contain;
+        // background-size: contain;
+        background-position: 77%;
         }
        
     }
@@ -395,7 +396,7 @@ vertical-align: middle;
 }
 
 .btn-outline {
-    border-color: green;
+    border-color: #00C635;
     border-radius: 20px;
     background: transparent;
     font-family: 'Circe';

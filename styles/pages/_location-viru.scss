@@ -1,6 +1,7 @@
 .main .banner-viru{
     background: url('../images/viru-keskus/viru-header.png') no-repeat;
     background-size: contain;
+    background-color: #FAFAFA;
 }
 
 .viru-actions {
@@ -14,7 +15,7 @@
     }
 }
 .main-content{
-
+    background-color: #FAFAFA;
     .main-heading{
         color: #000000;
         font-family: 'Lexend';
@@ -22,6 +23,11 @@
         font-weight: 600;
         letter-spacing: 0;
         @include line-height(75);
+
+        &.small{
+            @include font-size(40);
+            @include line-height(45);
+        }
     }
 }
 
@@ -31,3 +37,44 @@
     background-color: #FFFFFF;
     box-shadow: 0 0 9px 5px #E7E7E7;
 }
+.shadow-bg{
+    background: #FAFAFA url('../images/viru-keskus/viru-info-bg1.svg') no-repeat;
+
+    background-size: cover;
+    padding:40px 0;
+}
+
+.button-group {
+    display: inline-flex;
+    position: relative;
+    border:1px solid transparent;
+   
+    &:hover{
+        border:1px solid #00C635;
+    }
+    
+    .btn.btn-default {
+        background: #00C635;
+        // background: transparent;
+        border: transparent;
+        font-family: 'Lexend';
+        @include font-size(22);
+        font-weight: 600;
+        letter-spacing: 0;
+        @include line-height(28);
+        border-radius: 0;
+        padding:10px;
+
+
+        &:hover,&:focus{
+            background:#fff;
+            border-color:#00C635;
+            color: #00C635;
+            box-shadow: none;
+        }
+    
+        
+    }
+}
+
+.button-group .btn.btn-default:first-child:after {content: "";width: 4px;display: block;background: #fff;position: absolute;height: 106%;transform: rotate(19deg);left: 50%;}
