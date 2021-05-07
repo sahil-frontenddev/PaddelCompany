@@ -13,6 +13,9 @@
     &:hover{
         color:#00C635;
     }
+    @include respond-below(sm){
+        @include font-size(25);
+    }
 }
 .main{
     display: flex;
@@ -247,4 +250,52 @@
 
 .color-primary{
     color:#00C635;
+}
+
+
+.desktop{
+
+    @include respond-below(sm){
+        display: none  !important;
+    }
+
+
+}
+.mobile{
+    display: none;
+    @include respond-below(sm){
+        display: inline-block;
+    }
+
+
+}
+
+.navbar-brand .mobile{
+vertical-align: middle;
+}
+
+.dropdown-menu{
+  
+  font-family: 'Circe';
+  @include font-size(18);
+  letter-spacing: 0;
+  @include line-height(26);
+
+    @include respond-below(sm){
+
+        background-color: #0B1010;
+        color:#fff;
+        text-align: center;
+    }
+    .dropdown-item{
+        @include respond-below(sm){
+            font-style: italic;
+            background-color: #0B1010;
+            color:#fff;
+        }   
+    }
+
+}
+.small-font .nav-link{
+    @include font-size(14) ;
 }

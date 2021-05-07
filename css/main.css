@@ -1554,6 +1554,12 @@ a:hover {
 .nav-link:hover {
   color: #00C635;
 }
+@media (max-width: 767px) {
+  .nav-link {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
 
 .main {
   display: flex;
@@ -1771,6 +1777,53 @@ a:hover {
 
 .color-primary {
   color: #00C635;
+}
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+.mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mobile {
+    display: inline-block;
+  }
+}
+
+.navbar-brand .mobile {
+  vertical-align: middle;
+}
+
+.dropdown-menu {
+  font-family: "Circe";
+  font-size: 18px;
+  font-size: 1.125rem;
+  letter-spacing: 0;
+  line-height: 26px;
+  line-height: 1.625rem;
+}
+@media (max-width: 767px) {
+  .dropdown-menu {
+    background-color: #0B1010;
+    color: #fff;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .dropdown-menu .dropdown-item {
+    font-style: italic;
+    background-color: #0B1010;
+    color: #fff;
+  }
+}
+
+.small-font .nav-link {
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=main.css.map */
