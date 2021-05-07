@@ -1,0 +1,33 @@
+.main .banner-viru{
+    background: url('../images/viru-keskus/viru-header.png') no-repeat;
+    background-size: contain;
+}
+
+.viru-actions {
+    display: flex;
+    justify-content: space-between;
+    a {
+       font-size: 20px;
+       line-height: 22px;
+       color: #fff;
+       border-bottom: 2px solid green;
+    }
+}
+.main-content{
+
+    .main-heading{
+        color: #000000;
+        font-family: 'Lexend';
+        @include font-size(60);
+        font-weight: 600;
+        letter-spacing: 0;
+        @include line-height(75);
+    }
+}
+
+.table.table-responsive table {width: 100%;}
+
+.table.table-responsive {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 9px 5px #E7E7E7;
+}
