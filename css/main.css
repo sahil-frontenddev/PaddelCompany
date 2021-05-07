@@ -214,49 +214,49 @@ a:hover {
 
 @font-face {
   font-family: "Lexend";
-  src: local("Lexend ExtraBold"), local("Lexend-ExtraBold"), url("Lexend-ExtraBold.woff2") format("woff2"), url("Lexend-ExtraBold.woff") format("woff");
+  src: local("Lexend ExtraBold"), local("Lexend-ExtraBold"), url("../fonts/Lexend-ExtraBold.woff2") format("woff2"), url("../fonts/Lexend-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lexend";
-  src: local("Lexend Light"), local("Lexend-Light"), url("Lexend-Light.woff2") format("woff2"), url("Lexend-Light.woff") format("woff");
+  src: local("Lexend Light"), local("Lexend-Light"), url("../fonts/Lexend-Light.woff2") format("woff2"), url("../fonts/Lexend-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lexend";
-  src: local("Lexend Bold"), local("Lexend-Bold"), url("Lexend-Bold.woff2") format("woff2"), url("Lexend-Bold.woff") format("woff");
+  src: local("Lexend Bold"), local("Lexend-Bold"), url("../fonts/Lexend-Bold.woff2") format("woff2"), url("../fonts/Lexend-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lexend";
-  src: local("Lexend Medium"), local("Lexend-Medium"), url("Lexend-Medium.woff2") format("woff2"), url("Lexend-Medium.woff") format("woff");
+  src: local("Lexend Medium"), local("Lexend-Medium"), url("../fonts/Lexend-Medium.woff2") format("woff2"), url("../fonts/Lexend-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lexend";
-  src: local("Lexend Regular"), local("Lexend-Regular"), url("Lexend-Regular.woff2") format("woff2"), url("Lexend-Regular.woff") format("woff");
+  src: local("Lexend Regular"), local("Lexend-Regular"), url("../fonts/Lexend-Regular.woff2") format("woff2"), url("../fonts/Lexend-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lexend";
-  src: local("Lexend SemiBold"), local("Lexend-SemiBold"), url("Lexend-SemiBold.woff2") format("woff2"), url("Lexend-SemiBold.woff") format("woff");
+  src: local("../fonts/Lexend SemiBold"), local("Lexend-SemiBold"), url("../fonts/Lexend-SemiBold.woff2") format("woff2"), url("../fonts/Lexend-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lexend";
-  src: local("Lexend Thin"), local("Lexend-Thin"), url("Lexend-Thin.woff2") format("woff2"), url("Lexend-Thin.woff") format("woff");
+  src: local("Lexend Thin"), local("Lexend-Thin"), url("../fonts/Lexend-Thin.woff2") format("woff2"), url("../fonts/Lexend-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -264,35 +264,73 @@ a:hover {
 @font-face {
   font-family: "Circe Extra";
   src: url("Circe-ExtraLight.eot");
-  src: local("Circe Extra Light"), local("Circe-ExtraLight"), url("Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("Circe-ExtraLight.woff2") format("woff2"), url("Circe-ExtraLight.woff") format("woff"), url("Circe-ExtraLight.ttf") format("truetype");
+  src: local("Circe Extra Light"), local("Circe-ExtraLight"), url("../fonts/Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-ExtraLight.woff2") format("woff2"), url("../fonts/Circe-ExtraLight.woff") format("woff"), url("../fonts/Circe-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Circe";
-  src: url("Circe-Light.eot");
-  src: local("Circe Light"), local("Circe-Light"), url("Circe-Light.eot?#iefix") format("embedded-opentype"), url("Circe-Light.woff2") format("woff2"), url("Circe-Light.woff") format("woff"), url("Circe-Light.ttf") format("truetype");
+  src: url("../fonts/Circe-Light.eot");
+  src: local("Circe Light"), local("Circe-Light"), url("../fonts/Circe-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Light.woff2") format("woff2"), url("../fonts/Circe-Light.woff") format("woff"), url("../fonts/Circe-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Circe";
-  src: url("Circe-Regular.eot");
-  src: local("Circe"), local("Circe-Regular"), url("Circe-Regular.eot?#iefix") format("embedded-opentype"), url("Circe-Regular.woff2") format("woff2"), url("Circe-Regular.woff") format("woff"), url("Circe-Regular.ttf") format("truetype");
+  src: url("../fonts/Circe-Regular.eot");
+  src: local("Circe"), local("Circe-Regular"), url("../fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Circe";
-  src: url("Circe-Bold.eot");
-  src: local("Circe Bold"), local("Circe-Bold"), url("Circe-Bold.eot?#iefix") format("embedded-opentype"), url("Circe-Bold.woff2") format("woff2"), url("Circe-Bold.woff") format("woff"), url("Circe-Bold.ttf") format("truetype");
+  src: url("../fonts/Circe-Bold.eot");
+  src: local("Circe Bold"), local("Circe-Bold"), url("../fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe-Bold.woff") format("woff"), url("../fonts/Circe-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?wmzsyq");
+  src: url("../fonts/icomoon.eot?wmzsyq#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?wmzsyq") format("truetype"), url("../fonts/icomoon.woff?wmzsyq") format("woff"), url("../fonts/icomoon.svg?wmzsyq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-keyboard_arrow_down:before {
+  content: "";
+}
+
+.icon-arrow-up-right2:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
 .btn {
   background: #0076CE;
   border-radius: 4px;
@@ -1513,6 +1551,9 @@ a:hover {
   font-size: 18px;
   font-size: 1.125rem;
 }
+.nav-link:hover {
+  color: #00C635;
+}
 
 .main {
   display: flex;
@@ -1598,6 +1639,80 @@ a:hover {
 .content-about {
   position: relative;
   top: -188px;
+}
+
+.footer {
+  background-color: #0D1312;
+  padding-top: 3rem;
+}
+.footer h4 {
+  margin-top: 2rem;
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  text-transform: uppercase;
+}
+.footer .social-links a {
+  color: #fff;
+}
+.footer .social-links a:hover [class^=icon-] {
+  color: #00C635;
+}
+.footer .social-links [class^=icon-] {
+  font-size: 2rem;
+  color: #fff;
+}
+.footer .contact-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer .contact-detail a {
+  color: #fff;
+  font-family: "Lexend";
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+.footer .contact-detail a:hover {
+  color: #fff;
+  border-bottom: 2px solid #00C635;
+}
+.footer h5 {
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 50px;
+  font-size: 3.125rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 63px;
+  line-height: 3.9375rem;
+  text-align: right;
+}
+
+.seprator-white {
+  border-bottom: 1px solid #fff;
+  padding: 1.5rem 0;
+}
+
+.navbar {
+  padding: 0.5rem 0;
+}
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

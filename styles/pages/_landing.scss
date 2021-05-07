@@ -173,8 +173,10 @@
 
     .navbar-nav{
 
-        .nav-item:last-child .nav-link{
+        .nav-item{
+            position: relative;
+            &:last-child .nav-link{
             padding-right: 0;
-        }
+        }}
     }
 }
