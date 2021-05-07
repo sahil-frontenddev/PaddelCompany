@@ -1576,15 +1576,49 @@ a:hover {
   color: #FFFFFF;
   font-family: Lexend;
   font-size: 70px;
+  font-size: 4.375rem;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 88px;
+  line-height: 5.5rem;
 }
 .main .banner-content-container {
   position: absolute;
   width: 31%;
   top: 50%;
   transform: translate(0, -50%);
+}
+@media (max-width: 767px) {
+  .main .banner-content-container {
+    width: 48%;
+    transform: translate(50%, 32px);
+    top: 0;
+  }
+}
+@media (max-width: 575px) {
+  .main .banner-content-container {
+    width: 90%;
+    transform: none;
+    top: 12px;
+    left: 32px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .main .banner-content {
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
+}
+@media (max-width: 767px) {
+  .main .banner {
+    background: url("../images/landing/banner-mobile.png") repeat-x;
+    height: 580px;
+    background-size: contain;
+  }
 }
 .main .banner-green {
   background: url("../images/landing/what is padel background.svg") no-repeat;
@@ -1593,6 +1627,14 @@ a:hover {
   position: relative;
   top: -126px;
   padding-bottom: 155px;
+}
+@media (max-width: 767px) {
+  .main .banner-green {
+    top: -248px;
+    background-size: auto;
+    background-position-x: 87%;
+    padding-bottom: 37px;
+  }
 }
 .main .banner-green h2 {
   color: #FFFFFF;
@@ -1608,6 +1650,11 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0;
   display: block;
+}
+@media (max-width: 767px) {
+  .main .banner-green h2 {
+    color: #0B1010;
+  }
 }
 .main .banner-green p {
   color: #FFFFFF;
@@ -1640,6 +1687,12 @@ a:hover {
   top: -204px;
   background: #fff;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .skew-spacer {
+    height: 62px;
+    top: -275px;
+  }
 }
 
 .content-about {
@@ -1793,6 +1846,10 @@ a:hover {
     display: inline-block;
   }
 }
+.mobile.mobile-adjust {
+  position: relative;
+  top: -42px;
+}
 
 .navbar-brand .mobile {
   vertical-align: middle;
@@ -1824,6 +1881,83 @@ a:hover {
 .small-font .nav-link {
   font-size: 14px;
   font-size: 0.875rem;
+}
+
+.news-letter-input {
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #00C635;
+  border-radius: 0;
+  padding-right: 20px;
+  min-width: 17rem;
+}
+.news-letter-input:focus {
+  background: transparent;
+  outline: none;
+  border-color: transparent;
+  border-bottom-color: #00C635;
+  box-shadow: none;
+}
+
+::placeholder {
+  color: #00C635 !important;
+  opacity: 1;
+  /* Firefox */
+  font-family: "Circe";
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  line-height: 29px;
+  line-height: 1.8125rem;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #00C635 !important;
+  font-family: "Circe";
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  line-height: 29px;
+  line-height: 1.8125rem;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #00C635 !important;
+  font-family: "Circe";
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  line-height: 29px;
+  line-height: 1.8125rem;
+}
+
+.rel {
+  position: relative;
+}
+.rel .abs {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  color: #00C635;
+}
+
+.btn-outline {
+  border-color: green;
+  border-radius: 20px;
+  background: transparent;
+  font-family: "Circe";
+  font-size: 18px;
+  font-size: 1.125rem;
+  letter-spacing: 0;
+  line-height: 26px;
+  line-height: 1.625rem;
+}
+.btn-outline:hover, .btn-outline:focus {
+  background-color: #fff;
+  box-shadow: none;
+  outline: none;
 }
 
 /*# sourceMappingURL=main.css.map */

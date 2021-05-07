@@ -32,17 +32,40 @@
             // @include make-container(1140px);
             color: #FFFFFF;
             font-family: Lexend;
-            font-size: 70px;
+            @include font-size(70);
             font-weight: 600;
             letter-spacing: 0;
-            line-height: 88px;
+            @include line-height(88);
             &-container {
                 position: absolute;
                 width: 31%;
                 top: 50%;
                 transform: translate(0, -50%);
+                @include respond-below(sm){
+                    width: 48%;
+                    transform: translate(50%, 32px);
+                    top: 0;
+                
+                }
+                @include respond-below(xs){
+                width: 90%;
+                transform: none;
+                top: 12px;
+                left: 32px;
+                @include font-size(16);}
+            }
+            @include respond-below(sm){
+                @include font-size(30);
+                @include line-height(30);
             }
         }
+        @include respond-below(sm){
+            background: url("../images/landing/banner-mobile.png") repeat-x;
+        height: 580px;
+        // background-attachment:fixed ;
+        background-size: contain;
+        }
+       
     }
     .banner-green{
         background: url('../images/landing/what\ is\ padel\ background.svg') no-repeat;
@@ -52,7 +75,13 @@
         position: relative;
         top: -126px;
         padding-bottom: 155px;
+        @include respond-below(sm){
+            top: -248px;
+            background-size: auto;
+            background-position-x: 87%;
+            padding-bottom: 37px;
 
+        }
         h2{
             color: #FFFFFF;
             font-family: 'Lexend';
@@ -65,6 +94,10 @@
                 font-weight: 600;
                 letter-spacing: 0;
                 display: block;
+            }
+
+            @include respond-below(sm){
+                color: #0B1010;
             }
         }
         p {
@@ -102,6 +135,12 @@
     top: -204px;
     background: #fff;
     width: 100%;
+
+
+    @include respond-below(sm){
+        height: 62px;
+        top: -275px;
+    }
 }
 .content-about {
     position: relative;
@@ -266,7 +305,10 @@
     @include respond-below(sm){
         display: inline-block;
     }
-
+    &.mobile-adjust{
+        position: relative;
+        top:-42px;
+    }
 
 }
 
@@ -298,4 +340,72 @@ vertical-align: middle;
 }
 .small-font .nav-link{
     @include font-size(14) ;
+}
+
+.news-letter-input{
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #00C635;
+    border-radius: 0;
+    padding-right: 20px;
+    min-width: 17rem;
+
+    &:focus{
+        background:transparent;
+        outline: none;
+        border-color: transparent;
+        border-bottom-color:#00C635 ;
+        box-shadow: none;
+    }
+    
+}
+::placeholder {
+    color: #00C635 !important;
+    opacity: 1; /* Firefox */
+    font-family: 'Circe';
+    @include font-size(20);
+    letter-spacing: 0;
+    @include line-height(29);
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #00C635 !important;
+   font-family: 'Circe';
+    @include font-size(20);
+    letter-spacing: 0;
+    @include line-height(29);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #00C635 !important;
+   font-family: 'Circe';
+    @include font-size(20);
+    letter-spacing: 0;
+    @include line-height(29);
+  }
+
+.rel{
+    position: relative;
+    .abs{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        color: #00C635;
+    }
+}
+
+.btn-outline {
+    border-color: green;
+    border-radius: 20px;
+    background: transparent;
+    font-family: 'Circe';
+    @include font-size(18);
+    letter-spacing: 0;
+    @include line-height(26);
+
+&:hover,&:focus{
+    background-color: #fff;
+    box-shadow: none;
+    outline: none;
+}
 }
