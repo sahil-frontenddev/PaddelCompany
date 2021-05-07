@@ -44,6 +44,31 @@
         padding-top: 109px;
         position: relative;
         top: -126px;
+        padding-bottom: 155px;
+
+        h2{
+            color: #FFFFFF;
+            font-family: 'Lexend';
+            @include font-size(70);
+            font-weight: 600;
+            letter-spacing: 0;
+            // @include line-height(85);
+            span{
+                @include font-size(25);
+                font-weight: 600;
+                letter-spacing: 0;
+                display: block;
+            }
+        }
+        p {
+        color: #FFFFFF;
+        font-family: 'Circe';
+        letter-spacing: 0;
+        @include font-size(18);
+        @include line-height(26);
+    }
+
+        
     }
     .content-box{
         &__left,&__right{
@@ -51,6 +76,8 @@
 
             img{width: 100%;}
         }
+
+        
     }
 }
 .p-fixed{
@@ -58,4 +85,18 @@
     left: 0;
     right: 0;
     top:0;
+    z-index: 11;
+}
+
+.skew-spacer{
+    height: 145px;
+    transform: skewY(4deg);
+    position: relative;
+    top: -204px;
+    background: #fff;
+    width: 100%;
+}
+.content-about {
+    position: relative;
+    top: -188px;
 }

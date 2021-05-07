@@ -213,12 +213,85 @@ a:hover {
 }
 
 @font-face {
-  font-family: "Circe";
-  src: url("../fonts/CRC25.otf") format("otf");
+  font-family: "Lexend";
+  src: local("Lexend ExtraBold"), local("Lexend-ExtraBold"), url("Lexend-ExtraBold.woff2") format("woff2"), url("Lexend-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Lexend";
-  src: url("../fonts/Lexend-thin.ttf") format("ttf");
+  src: local("Lexend Light"), local("Lexend-Light"), url("Lexend-Light.woff2") format("woff2"), url("Lexend-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lexend";
+  src: local("Lexend Bold"), local("Lexend-Bold"), url("Lexend-Bold.woff2") format("woff2"), url("Lexend-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lexend";
+  src: local("Lexend Medium"), local("Lexend-Medium"), url("Lexend-Medium.woff2") format("woff2"), url("Lexend-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lexend";
+  src: local("Lexend Regular"), local("Lexend-Regular"), url("Lexend-Regular.woff2") format("woff2"), url("Lexend-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lexend";
+  src: local("Lexend SemiBold"), local("Lexend-SemiBold"), url("Lexend-SemiBold.woff2") format("woff2"), url("Lexend-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lexend";
+  src: local("Lexend Thin"), local("Lexend-Thin"), url("Lexend-Thin.woff2") format("woff2"), url("Lexend-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe Extra";
+  src: url("Circe-ExtraLight.eot");
+  src: local("Circe Extra Light"), local("Circe-ExtraLight"), url("Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("Circe-ExtraLight.woff2") format("woff2"), url("Circe-ExtraLight.woff") format("woff"), url("Circe-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("Circe-Light.eot");
+  src: local("Circe Light"), local("Circe-Light"), url("Circe-Light.eot?#iefix") format("embedded-opentype"), url("Circe-Light.woff2") format("woff2"), url("Circe-Light.woff") format("woff"), url("Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("Circe-Regular.eot");
+  src: local("Circe"), local("Circe-Regular"), url("Circe-Regular.eot?#iefix") format("embedded-opentype"), url("Circe-Regular.woff2") format("woff2"), url("Circe-Regular.woff") format("woff"), url("Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("Circe-Bold.eot");
+  src: local("Circe Bold"), local("Circe-Bold"), url("Circe-Bold.eot?#iefix") format("embedded-opentype"), url("Circe-Bold.woff2") format("woff2"), url("Circe-Bold.woff") format("woff"), url("Circe-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 .btn {
   background: #0076CE;
@@ -1459,6 +1532,8 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0;
   line-height: 88px;
+}
+.main .banner-content-container {
   position: absolute;
   width: 31%;
   top: 50%;
@@ -1470,6 +1545,31 @@ a:hover {
   padding-top: 109px;
   position: relative;
   top: -126px;
+  padding-bottom: 155px;
+}
+.main .banner-green h2 {
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 70px;
+  font-size: 4.375rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.main .banner-green h2 span {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  display: block;
+}
+.main .banner-green p {
+  color: #FFFFFF;
+  font-family: "Circe";
+  letter-spacing: 0;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 26px;
+  line-height: 1.625rem;
 }
 .main .content-box__left, .main .content-box__right {
   width: 100%;
@@ -1483,6 +1583,21 @@ a:hover {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 11;
+}
+
+.skew-spacer {
+  height: 145px;
+  transform: skewY(4deg);
+  position: relative;
+  top: -204px;
+  background: #fff;
+  width: 100%;
+}
+
+.content-about {
+  position: relative;
+  top: -188px;
 }
 
 /*# sourceMappingURL=main.css.map */
