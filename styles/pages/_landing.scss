@@ -8,6 +8,7 @@
 
     font-family: 'Lexend';
     color:#fff;
+    white-space: nowrap;
     @include font-size(18);
 
     &:hover{
@@ -46,17 +47,11 @@
                 top: 50%;
                 transform: translate(0, -50%);
                 @include respond-below(sm){
-                    width: 48%;
-                    transform: translate(50%, 32px);
+                    width: 52%;
+                    transform: translate(15%, 32px);
                     top: 0;
                 
                 }
-                @include respond-below(xs){
-                width: 90%;
-                transform: none;
-                top: 12px;
-                left: 32px;
-                @include font-size(16);}
             }
             @include respond-below(sm){
                 @include font-size(30);
@@ -184,6 +179,12 @@
             @include line-height(30);
             @include font-size(25);
         }
+    }
+    p{
+        font-family: 'Circe';
+        @include font-size(18);
+        letter-spacing: 0;
+        @include line-height(26);
     }
 }
 .footer{
