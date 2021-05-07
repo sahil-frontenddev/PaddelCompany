@@ -21,6 +21,9 @@
     display: flex;
     flex-direction: column;
     padding-top:63px;
+    @include respond-below(sm){
+        margin-bottom:-300px;
+    }
 
     .banner{ 
         background: url("../images/landing/banner.jpg") no-repeat;
@@ -28,6 +31,7 @@
         // background-attachment:fixed ;
         background-size: cover;
         position: relative;
+        background-position: 72%;
         &-content{
             // @include make-container(1140px);
             color: #FFFFFF;
@@ -146,6 +150,41 @@
 .content-about {
     position: relative;
     top: -188px;
+
+    @include respond-below(sm){
+        top:-302px;
+
+    }
+
+    h3{
+        color: #000000;
+        font-family: 'Lexend';
+        font-weight: 600;
+        letter-spacing: 0;
+        @include line-height(60);
+            @include font-size(85);
+        span{
+            display: block;
+            @include line-height(30);
+            @include font-size(25);
+            @include respond-below(sm){
+                @include line-height(18);
+                @include font-size(20);
+            }
+        }
+        @include respond-below(llg){
+            @include line-height(50);
+            @include font-size(55);
+        }
+        @include respond-below(lg){
+            @include line-height(50);
+            @include font-size(55);
+        }
+        @include respond-below(sm){
+            @include line-height(30);
+            @include font-size(25);
+        }
+    }
 }
 .footer{
     background-color: #0D1312;
@@ -161,6 +200,7 @@
     text-transform: uppercase;
     }
     .social-links{
+
         a{
             color:#fff;
 
@@ -170,6 +210,10 @@
         [class^="icon-"]{ 
             font-size: 2rem;
             color:#fff;
+        }
+
+        @include respond-below(sm){
+            text-align: center;
         }
     }
 
@@ -193,6 +237,10 @@
                 border-bottom:2px solid #00C635;
             }
         }
+
+        @include respond-below(sm){
+            align-items: center;
+        }
     }
     h5{
         color: #FFFFFF;
@@ -202,6 +250,20 @@
         letter-spacing: 0;
         @include line-height(63);
         text-align: right;
+
+
+        @include respond-below(sm){
+            text-align: center;
+        }
+    }
+
+    &-logo{
+
+        @include respond-below(sm){
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
     }
 }
 

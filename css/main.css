@@ -1208,7 +1208,7 @@ a:hover {
 .dropdown__text--in-header {
   color: #fff;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1219px) {
   .dropdown__text--in-header {
     display: block;
     text-align: center;
@@ -1566,11 +1566,17 @@ a:hover {
   flex-direction: column;
   padding-top: 63px;
 }
+@media (max-width: 767px) {
+  .main {
+    margin-bottom: -300px;
+  }
+}
 .main .banner {
   background: url("../images/landing/banner.jpg") no-repeat;
   height: 850px;
   background-size: cover;
   position: relative;
+  background-position: 72%;
 }
 .main .banner-content {
   color: #FFFFFF;
@@ -1698,6 +1704,60 @@ a:hover {
   position: relative;
   top: -188px;
 }
+@media (max-width: 767px) {
+  .content-about {
+    top: -302px;
+  }
+}
+.content-about h3 {
+  color: #000000;
+  font-family: "Lexend";
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 60px;
+  line-height: 3.75rem;
+  font-size: 85px;
+  font-size: 5.3125rem;
+}
+.content-about h3 span {
+  display: block;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-size: 25px;
+  font-size: 1.5625rem;
+}
+@media (max-width: 767px) {
+  .content-about h3 span {
+    line-height: 18px;
+    line-height: 1.125rem;
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1299px) {
+  .content-about h3 {
+    line-height: 50px;
+    line-height: 3.125rem;
+    font-size: 55px;
+    font-size: 3.4375rem;
+  }
+}
+@media (max-width: 1219px) {
+  .content-about h3 {
+    line-height: 50px;
+    line-height: 3.125rem;
+    font-size: 55px;
+    font-size: 3.4375rem;
+  }
+}
+@media (max-width: 767px) {
+  .content-about h3 {
+    line-height: 30px;
+    line-height: 1.875rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
 
 .footer {
   background-color: #0D1312;
@@ -1725,6 +1785,11 @@ a:hover {
   font-size: 2rem;
   color: #fff;
 }
+@media (max-width: 767px) {
+  .footer .social-links {
+    text-align: center;
+  }
+}
 .footer .contact-detail {
   display: flex;
   flex-direction: column;
@@ -1746,6 +1811,11 @@ a:hover {
   color: #fff;
   border-bottom: 2px solid #00C635;
 }
+@media (max-width: 767px) {
+  .footer .contact-detail {
+    align-items: center;
+  }
+}
 .footer h5 {
   color: #FFFFFF;
   font-family: "Lexend";
@@ -1756,6 +1826,18 @@ a:hover {
   line-height: 63px;
   line-height: 3.9375rem;
   text-align: right;
+}
+@media (max-width: 767px) {
+  .footer h5 {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .seprator-white {
