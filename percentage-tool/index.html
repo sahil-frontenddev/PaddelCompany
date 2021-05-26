@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <title>Percentage Tool</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Percentage Calculator </h1>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card xper">
+                  <div class="left">What is &nbsp; <input type='number' class="form-control" tab-index="1" id="input-percent"  />&nbsp;%  of &nbsp;<input type='number' class="form-control" tab-index="1" id="input-total" /> &nbsp;? </div>
+                  <div class="right"><button class="btn btn-primary mr-2" id="calculate-percent">Calculate</button><input type='number' class="form-control" tab-index="1" id="calculation" readonly /></div>  
+                </div>
+                <div class="card xper">
+                    <div class="left"><input type='number' class="form-control" tab-index="1" id="input1-number"  />&nbsp; is what % of &nbsp;<input type='number' class="form-control" tab-index="1"id="input1-total"  />&nbsp; ? </div>
+                    <div class="right"><button class="btn btn-primary mr-2"id="calculate-percent1">Calculate</button><input type='number' class="form-control" tab-index="1" id="input1-calculation" readonly />%</div>  
+                  </div>
+                  <div class="card">
+                    <p class="w-100 mb-2">What is the percentage increase/decrease</p>
+                    <div class="left" >from &nbsp; <input type='number' class="form-control" tab-index="1" id="input2-number"  />&nbsp; to &nbsp;<input type='number' class="form-control" tab-index="1" id="input2-total"  />&nbsp; ? </div>
+                    <div class="right"><button class="btn btn-primary mr-2" id="calculate-percent2">Calculate</button><input type='number' class="form-control" tab-index="1"  id="input2-calculation" readonly />%</div>  
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Tips: Use tab to move to the next field. Use shift-tab to move to the previous field. Press enter to calculate</p>
+            </div>
+        </div>
+    </div>
+
+    <script
+  src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

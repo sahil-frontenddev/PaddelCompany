@@ -1,0 +1,30 @@
+.card {
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 24px 12px;
+}
+.left {
+    min-width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.left input {
+    width: auto;
+    display: inline-block;
+}
+
+.right {
+    min-width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.right input {
+    width: auto;
+    display: inline-block;
+}
